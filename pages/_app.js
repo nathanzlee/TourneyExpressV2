@@ -6,7 +6,9 @@ export default function App({ Component, pageProps }) {
   return (
     <div className='grid grid-rows-[100px_1fr] h-screen'>
       <Navbar />
-      <Component {...pageProps} />
+      <div className='bg-gray-200'>
+        <Component {...pageProps} />
+      </div>
     </div>
   )
 }
